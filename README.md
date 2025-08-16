@@ -18,6 +18,36 @@ This README reports our **test-set** performance using a lightweight timm model 
 
 ---
 
+## Per-Class Metrics (Test)
+
+| Class | Precision | Recall | F1-score | Support |
+|---|---:|---:|---:|---:|
+| delta | 0.9403 | 0.9061 | 0.9228 | 330 |
+| estuary | 0.8730 | 0.8800 | 0.8765 | 125 |
+| flood | 0.8789 | 0.7951 | 0.8349 | 283 |
+| glaciers | 0.9234 | 0.9542 | 0.9385 | 240 |
+| hot_spring | 0.7991 | 0.8507 | 0.8241 | 201 |
+| lake | 0.6442 | 0.8758 | 0.7424 | 153 |
+| pool | 0.9394 | 0.7848 | 0.8552 | 79 |
+| puddle | 0.8376 | 0.5833 | 0.6877 | 168 |
+| rapids | 0.8502 | 0.8813 | 0.8655 | 219 |
+| river | 0.7547 | 0.5479 | 0.6349 | 73 |
+| sea | 0.7769 | 0.8704 | 0.8210 | 108 |
+| snow | 0.7937 | 0.8944 | 0.8411 | 142 |
+| swamp | 0.9365 | 0.9415 | 0.9390 | 188 |
+| waterfall | 0.7812 | 0.7812 | 0.7812 | 96 |
+| wetland | 0.8788 | 0.9355 | 0.9062 | 93 |
+
+**Overall (from classification report)**
+
+| Metric | Precision | Recall | F1-score | Support |
+|---|---:|---:|---:|---:|
+| **accuracy** | — | — | **0.8491** | **2498** |
+| **macro avg** | 0.8405 | 0.8321 | 0.8314 | 2498 |
+| **weighted avg** | 0.8545 | 0.8491 | 0.8478 | 2498 |
+
+---
+
 ## Side-by-Side with Paper Baselines (ATeX Table 1)
 
 > The paper’s “Accuracy” column is labeled **Accuracy (Val)**. Our accuracy is measured on the **test** split. Precision/Recall/F1 are **macro** metrics.
